@@ -823,13 +823,16 @@ a:hover{
 }
 
 .technology .css{
-    background: purple;
+    background: rgb(125, 2, 125);
 }
 
 .technology .html{
     background: green;
 }
-.technology .js, .css, .html{
+.technology .lnx{
+    background: blue;
+}
+.technology .js, .css, .html, .lnx{
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -858,7 +861,7 @@ a .fa-github-alt{
     justify-content: center;
 }
 
-.legend .java, .ht, .cs {
+.legend .java, .ht, .cs, .lx {
     margin-top: 0;
     font-size: 1.2rem;
     font-weight: 600;
@@ -881,6 +884,15 @@ a .fa-github-alt{
 .legend .ht::before{
     content: "";
     border-left: 10px solid purple;
+    margin: 0.5rem 1rem 0 1rem;
+}
+.legend .lx{
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+.legend .lx::before{
+    content: "";
+    border-left: 10px solid rgb(38, 0, 128);
     margin: 0.5rem 1rem 0 1rem;
 }
 
