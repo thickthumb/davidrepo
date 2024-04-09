@@ -330,7 +330,10 @@ section {
     border-bottom: 50vh solid var(--main-color);
     border-left: 384px solid transparent;
 }
+.imgw{
 
+
+}
 .home-img img{
     position: absolute;
     bottom: 0;
@@ -1401,7 +1404,7 @@ a .fa-github-alt{
    }
 
    .languages .lang-logo, .frameworks .frame-logo, 
-        .tools .tools-logo, .cms .cms-logo {
+        .tools .tools-logo, .cms .cms-logo .img_grid {
         gap: 2rem;
         margin-left: 4rem;
        }
@@ -1534,4 +1537,54 @@ a .fa-github-alt{
   .dark-mode .header.scrolled {
     background-color: #0b061f; 
     color: var(--magic-color);/* Set your desired background color for scrolled header in dark mode */
+}
+
+/*additional css for new-page*/
+.img_grid {
+    margin-block-start: 12rem;
+    display: flex;
+    justify-content: left;
+    gap: 7rem;
+    margin-left: 6rem;
+}
+
+.img_grid img{
+    width: 25rem;
+    height: 20rem;
+}
+
+.img_grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+.lang_logo p{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 300;
+    margin-top: 12px;
+    font-size: 4rem;
+    color: #0b061f;
+
+} 
+/*shrinknimg_grid on smaller screens*/
+@media (max-width: 768px){
+    .img_grid img{
+        width: 20rem;
+        height: 15rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .img_grid {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: right; 
+    }
+    .img_grid img{
+        width: 20rem;
+        height: 15rem;
+    }
+    
 }
