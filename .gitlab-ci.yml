@@ -28,7 +28,7 @@ deploy_to_azure:
       --account-name $AZURE_STORAGE_ACCOUNT
       --account-key $AZURE_STORAGE_KEY
       --source .
-      --destination \$web
+      --destination \dave-container001
       --overwrite
   only:
     - main  # Run this job only on pushes to the 'main' branch
