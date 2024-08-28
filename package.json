@@ -1,0 +1,16 @@
+{
+  "name": "davidtaiwo_repo",
+  "version": "1.0.0",
+  "description": "Get to know me 360",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
