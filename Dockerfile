@@ -12,7 +12,7 @@ RUN npm ci --omit=dev
 COPY . .
 
 # Expose app port (change if needed)
-EXPOSE 3000
+EXPOSE 8080
 
 # Start app
 CMD ["npm", "start"]
